@@ -1,1 +1,3 @@
 # Foundry-UUPS-Upgradable-Proxy
+
+This repository contains a UUPS upgradable proxy contract that used to upgrade logic contracts. It is based on the [ERC-1967 proxy](https://eips.ethereum.org/EIPS/eip-1967) . In this repo, we deploy a proxy contract by pointing to the logic contract address(BoxV1). The proxy contract will delegate all calls to the logic contract functions. If we want to upgrade the logic contract, we can deploy a new logic contract(BoxV2) and point the proxy contract to the new logic contract address. The proxy contract will delegate all calls to the new logic contract functions.
